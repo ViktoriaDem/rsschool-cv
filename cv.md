@@ -28,6 +28,7 @@ alert(netProfit);
 ***
 ### Education:
 **University:** Belarusian State University of Informatics and Radioelectronics, Faculty of Engineering and Economics
+
 **Courses:** 
 * HTML Basics on the [code-basics](https://ru.code-basics.com/)
 * CSS Basics on the [code-basics](https://ru.code-basics.com/)
