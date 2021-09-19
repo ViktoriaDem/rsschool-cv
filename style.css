@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Georgia, serif;
+}
+
+body{
+    background: #fcfbfb;
+    font-size: 14px;
+    line-height: 22px;
+    color: #372b25;
+}
+
+.bold{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.semi_bold{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+main{
+    width: 800px;
+    height: auto;
+    display: flex;
+    margin: 50px auto 0 auto;
+}
+
+footer{
+    width: 800px;
+    height: auto;
+    display: flex;
+    margin: 0px auto 50px auto;
+    background: rgba(247, 220, 220, 0.568);
+}
+
+main .left-column{
+    width: 300px;
+    background: #dab0af;
+}
+
+main .left-column .profile{
+    width: 100%;
+    height: 280px;
+}
+
+main .left-column .profile img{
+    width: 100%;
+    height: 100%;
+}
+
+main .left-column .content{
+    padding: 0 25px;
+}
+
+main .title{
+    margin-bottom: 20px;
+}
+
+main .left-column .bold{
+    color: #372b25;
+}
+
+main .left-column{
+    color: #372b25;
+}
+
+main .item{
+    padding: 25px 0;
+    border-bottom: 2px solid #372b25; 
+}
+
+main .right-column .item:last-child{
+    padding: 25px 0 0 0;
+}
+
+main .left-column .item:last-child,
+main .right-column .item:last-child,
+main .right-column .item:first-child{
+    border-bottom: 0px;
+}
+
+main .right-column .item:first-child{
+    padding: 46px 5px;
+}
+
+main .left-column ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+main .left-column ul li:last-child{
+    margin-bottom: 0;
+}
+
+main .left-column ul li .icon{
+    width: 35px;
+    height: 35px;
+    background: #fcfbfb;
+    color: #372b25;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 16px;
+    position: relative;
+}
+
+main .left-column i,
+main .right-column .cv_hobby ul li i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main .left-column ul li .data{
+    color: #372b25;
+    font-weight: normal;
+}
+
+main .right-column{
+    width: 500px;
+    background: #fcfbfb;
+    padding: 25px;
+}
+
+main .right-column .name h2{
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 70px;
+    color: #372b25;
+}
+
+main .right-column .bold{
+    color: #372b25;
+    background: #dab0af;
+    padding-left: 10px;
+}
+
+main .right-column .title{
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+main .right-column .cv_education ul,
+main .right-column .code {
+    padding-left: 30px;
+    overflow: hidden;
+}
+
+main .right-column ul li{
+    position: relative;
+}
+
+main .right-column ul li .title_edu{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+main .right-column ul li .info{
+    margin-bottom: 20px;
+    padding-left: 7px;
+    padding-right: 10px;
+}
+
+main .right-column ul li:last-child  .info{
+    margin-bottom: 0;
+}
+
+main .right-column .cv_education ul li:before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -20px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 2px solid #dab0af;
+}
+
+main .right-column .cv_education ul li:after{
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -16px;
+    width: 2px;
+    height: 84px;
+    background: #dab0af;
+}
+
+main .right-column .code{
+    background: rgba(247, 220, 220, 0.568);
+}
+
+main .right-column .cv_hobby ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+main .right-column .cv_hobby ul li{
+    width: 50px;
+    height: 50px;
+    border: 2px solid #dab0af;
+    border-radius: 50%;
+    position: relative;
+    color: #dab0af;
+}
+
+main .right-column .cv_hobby ul li i{
+    font-size: 20px;
+}
+
+main .right-column .cv_hobby ul li:before{
+    content: "";
+    position: absolute;
+    top: 23px;
+    right: -30px;
+    width: 25px;
+    height: 2px;
+    background: #dab0af;
+}
+
+main .right-column .cv_hobby ul li:last-child:before{
+    display: none;
+}
+
+.logo{
+    padding: 0 50px 0 0;
+}
+
+.github{
+    padding: 25px 0 25px 50px;
+}
+
+.year{
+    padding: 35px 275px;
+    text-align: center;
+}
+
+#year2021{
+    font-size: 18px;
+    color: black;
+}
+
