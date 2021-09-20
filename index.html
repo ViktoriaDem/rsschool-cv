@@ -5,12 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demidovich CV RSS</title>
+    <title>Demidovich CV</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/2e15b0e08d.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/routeros.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__menu menu">
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+                <nav class="menu__body">
+                    <ul class="menu__list">
+                        <li><a data-goto=".cv_about" href="#" class="menu__link">About me</a></li>
+                        <li><a data-goto=".resume_contacts" href="#" class="menu__link">Contact information</a></li>
+                        <li><a data-goto=".resume_skills" href="#" class="menu__link">Skills</a></li>
+                        <li><a data-goto=".cv_education" href="#" class="menu__link">Education</a></li>
+                        <li><a data-goto=".cv_code" href="#" class="menu__link">Code</a></li>
+                        <li><a data-goto=".resume_languages" href="#" class="menu__link">Languages</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
     <main>
         <div class="left-column">
             <div class="profile">
@@ -141,11 +164,11 @@
                     <p class="bold">Code example</p>
                 </div>
                 <div class="code">
-                    <pre>function getNetProfit(totalRevenue, totalExpenses){
+                    <pre><code>function getNetProfit(totalRevenue, totalExpenses){
     return totalRevenue - totalExpenses;
 }
 var netProfit = getNetProfit(1250, 1120);
-alert(netProfit);</pre>
+alert(netProfit);</code></pre>
                 </div>
             </div>
             <div class="item cv_hobby">
@@ -172,10 +195,11 @@ alert(netProfit);</pre>
         <div class="year">
             <p id="year2021">2021</p>
         </div>
-        <a class="logo" href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="RS-School"
-                width="80" height="80"></a>
+        <a class="logo" href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg"
+                alt="RS-School" width="80" height="80"></a>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>

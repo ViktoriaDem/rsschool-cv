@@ -13,6 +13,10 @@ body{
     color: #372b25;
 }
 
+body.lock {
+    overflow: hidden;
+}
+
 .bold{
     font-weight: 700;
     font-size: 20px;
@@ -28,6 +32,43 @@ main{
     height: auto;
     display: flex;
     margin: 50px auto 0 auto;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #fcfbfb;
+}
+
+.header__container {
+    max-width: 800px;
+    margin: 0px auto;
+    display: flex;
+    padding: 0px 30px;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70px;
+}
+
+.menu__list > li {
+    position: relative;
+    margin: 0px 0px 0px 20px;
+}
+
+.menu__link {
+    color: #372b25;
+    font-size: 16px;
+}
+
+.menu__link:hover{
+    text-decoration: underline;
+}
+
+.menu__icon{
+    display: none;
 }
 
 footer{
@@ -153,6 +194,10 @@ main .right-column .code {
     overflow: hidden;
 }
 
+main .right-column .code{
+    padding-right: 10px;
+}
+
 main .right-column ul li{
     position: relative;
 }
@@ -194,9 +239,7 @@ main .right-column .cv_education ul li:after{
     background: #dab0af;
 }
 
-main .right-column .code{
-    background: rgba(247, 220, 220, 0.568);
-}
+
 
 main .right-column .cv_hobby ul{
     display: flex;
@@ -248,3 +291,84 @@ main .right-column .cv_hobby ul li:last-child:before{
     color: black;
 }
 
+@media (min-width: 767px){
+    .menu__list{
+        display: flex;
+        align-items: center;
+    }
+    .menu__list > li{
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 767px){
+    .menu__icon{
+        z-index: 5;
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 18px;
+        cursor: pointer;
+    }
+    .menu__icon span,
+    .menu__icon::before,
+    .menu__icon::after {
+        left: 0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        background-color: #372b25;
+    }
+
+    .menu__icon::before,
+    .menu__icon::after {
+        content: "";
+    }
+    
+    .menu__icon::before {
+        top: 0;
+    }
+    .menu__icon::after {
+        bottom: 0;
+    }
+    .menu__icon span {
+        top: 50%;
+        transform: scale(1) translate(0px, -50%);
+    }
+    .menu__body {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(194, 117, 117, 0.897);
+        padding: 100px 30px 30px 30px;
+        transition: left 0.3s ease 0s;
+        overflow: auto;
+    }
+    .menu__body.active {
+       left: 0;
+    }
+    .menu__body::before{
+        content: "";
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 70px;
+        background-color: rgba(247, 220, 220, 0.568);;
+        z-index: 2;
+    }
+    .menu__list > li {
+        flex-wrap: wrap;
+        margin: 0px 0px 30px 0px;
+    }
+    .menu__list > li:last-child {
+        margin-bottom: 0;
+    }
+    .menu__link {
+        font-size: 24px;
+    }
+
+}
