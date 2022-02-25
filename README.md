@@ -1,2 +1,2 @@
-# rsschool-cv
+# cv
 https://ViktoriaDem.github.io/rsschool-cv/
